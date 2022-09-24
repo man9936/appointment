@@ -1,4 +1,5 @@
 function showInput(){
+    var objects = JSON.parse(localStorage.getItem('objects') || "[]");
      let myobj={
         name:document.getElementById("fname").value,
 
@@ -11,16 +12,28 @@ function showInput(){
          time:document.getElementById("time").value
 
      }
-     
-      let myobjSerial = JSON.stringify(myobj);
+     objects.push(myobj)
+      let myobjSerial = JSON.stringify(objects);
 
-     localStorage.setItem("myobj", myobjSerial);
+     localStorage.setItem("objects", myobjSerial);
   
      console.log(localStorage);
      
      
    }
-   
+//    function addNewShow(titleArg, typeArg, genreArg, watchedArg) {
+//     // Get array from local storage, defaulting to empty array if it's not yet set
+//     var showList = JSON.parse(localStorage.getItem('showList') || "[]");
+  
+//     var show = {
+//       title: titleArg,
+//       type: typeArg,
+//       genre: genreArg,
+//       watched: watchedArg
+//     };
+//     showList.push(show);
+//     localStorage.setItem("showList", JSON.stringify(showList));
+//   };
    
 
 //    localStorage.setItem("manish","24");
