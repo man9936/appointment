@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html language="en">
+
+    <head>
+
+        <title>talk-to-mentor</title>
+
+      
+
+       <style>
+
+       
+
+        #div2{
+
+            border:1px solid yellow;
+
+            color:white;
+
+            width:fit-content;
+
+            margin-left: auto;
+
+            margin-top: 0%;
+
+            background-color: black;
+
+            text-align: left;
+
+            float: left;
+
+            width:60%;
+
+            border-radius: 2%;
+
+            
+
+
+
+        }
+
+        #div1{
+
+            text-align:left;
+
+            float: left;
+
+            width:15%;
+
+            color:yellow;
+
+            margin-right: auto;
+
+            
+
+           
+
+        }
+
+        #div3{
+
+            text-align:center;
+
+            float:right;
+
+            width:20%;
+
+            margin-inline-end: auto;
+
+            
+
+        }
+
+        form{
+
+            text-align:initial;
+
+            padding: 2px;
+
+        
+
+        }
+        .text{
+            width:90%;
+
+            
+        }
+
+        #a1,#a2{
+
+            text-align:justify;
+
+            border: 1px solid yellow;
+
+
+
+        }
+
+       </style>
+
+       <script src="app.js"></script> 
+       <!----
+       type="text/javascript">
+
+       function showInput(){
+
+        var name=document.getElementById("fname").value;
+
+        var email=document.getElementById("femail").value;
+
+        var phone=document.getElementById("fphone").value;
+
+        var date=document.getElementById("timeforcall").value;
+
+        var time=document.getElementById("time").value;
+
+        document.write("your name:"+name+"<br>");
+
+        document.write("your email:"+email +"<br>");
+
+        document.write("your phone:"+phone+"<br>");
+
+        document.write("your appointment:<br>" +"date:"+date+"<br>"+"time:"+time);
+
+       }
+
+       </script>
+    -->
+
+    </head>
+
+    <body style="background-image: url(https://hdwpro.com/wp-content/uploads/2017/03/Art-Background-Image.png);">
+
+        <div id="div1"> 
+
+            <h1><ins>YAV</ins></h1>
+
+        </div>
+
+<div id="div2">
+
+    <h2>Book a Call</h2>
+
+    <p>Book a call slot and our representative will call you within 1hr of Selected time</p>
+
+
+
+    <hr>
+  
+
+
+    <form onsubmit="showInput()">
+
+        <label for="fname">Name:</label><br>
+
+        <input type="text" style="width:-webkit-fill-available;" class="text" id="fname" name="fname" required><br>
+
+        <label for="femail">Email:</label><br>
+
+        <input type="email" style="width:-webkit-fill-available" class="text" id="femail" name="femail" required><br>
+
+        <label for="fphone">Phone:</label><br>
+
+        <input type="text" style="width:-webkit-fill-available"  class="text" id="fphone" name="fphone" pattern="[0-9]{10}" required><br>
+
+        <label for="timeforcall">Time for call:</label><br>
+
+        <input type="date" style="width:47%" id="timeforcall" name="timeforcall" placeholder="19/09/2022" value="19/09/2022" required>
+
+        <input type="time" style="width:47%" id="time" name="timeforcall" placeholder="11:00" value="11:00" required><br>
+
+        
+
+        
+
+        <input type="submit" id="submit" value="Get A Call" style="width :100%">
+
+    </form>
+
+
+
+</div>
+
+<div id="div3">
+
+    <a id="a1" href="/action_page.php> ">Schedule a Call</a>
+
+    <br><br>
+
+    <a id="a2"href="/action_page.php> ">Hire with us</a>
+
+</div>
+
+    </body>
+
+</html>
